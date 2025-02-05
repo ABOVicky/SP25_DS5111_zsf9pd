@@ -5,16 +5,26 @@ This repository contains scripts and setup instructions to quickly configure an 
 ## **1. VM Bootstrap Setup**
 
 ### **Manual Steps (If Not Using Scripts)**
-1. Update system packages:
+1. Update System Packages:
 
    ```bash
+   # To bring VM snapshot up to date with package versions
    sudo apt update
    ```
-2. Set up Git credentials and SSH key (see `scripts/00_01_setup_git_global_creds.sh`).
-3. Clone this repository:
+
    ```bash
-   git clone <your-repo-url>
-   cd SP25_DS5111_zsf9pd
+   # To use makefiles
+   sudo apt install make -y
+   ```
+
+   ```bash
+   # To create python virtual environments
+   sudo apt install python3.12-venv -y
+   ```
+
+   ```bash
+   # To list files in tree form
+   sudo apt install tree
    ```
 
 ### **Automated Setup**
