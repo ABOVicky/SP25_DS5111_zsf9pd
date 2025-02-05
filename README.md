@@ -2,7 +2,18 @@
 
 This repository contains scripts and setup instructions to quickly configure an AWS EC2 instance for data collection using a headless Chrome browser and Python virtual environment.
 
-## **1. VM Bootstrap Setup**
+## **1. Clone Repository and Set Up Credentials**
+
+1. Clone Repository:
+
+   ```bash
+   git clone <your-repo-url>
+   cd SP25_DS5111_zsf9pd
+   ```
+   
+2. Set up Git Credentials and SSH Key (see `scripts/00_01_setup_git_global_creds.sh`).
+
+## **2. VM Bootstrap Setup**
 
 ### **Manual Steps (If Not Using Scripts)**
 Update System Packages:
@@ -34,7 +45,7 @@ Run Initialization Script (All Manual Steps):
 ./scripts/init.sh
 ```
 
-## **2. Project Setup**
+## **3. Project Setup**
 
 ### **Step 1: Install Headless Chrome**
 Run:
@@ -72,7 +83,7 @@ Check that `ygainers.csv` exists:
 ls -lh ygainers.csv
 ```
 
-## **3. Project Structure**
+## **4. Project Structure**
 Run Following Command:
 
 ```bash
@@ -97,7 +108,7 @@ Expected Output (Based on File Structure):
 └── ygainers.html
 ```
 
-## **4. Final Notes**
+## **5. Final Notes**
 - **Ensure all scripts are executable**:
   ```bash
   chmod +x scripts/*.sh
