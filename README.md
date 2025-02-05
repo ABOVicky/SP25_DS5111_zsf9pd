@@ -28,19 +28,17 @@ This repository contains scripts and setup instructions to quickly configure an 
    ```
 
 ### **Automated Setup**
-Run the initialization script to install essential tools:
+Run the initialization script to conduct all manual steps:
+
 ```bash
 ./scripts/init.sh
 ```
-This installs:
-- `make` (for automation)
-- `python3.12-venv` (for virtual environments)
-- `tree` (for file visualization)
 
 ## **2. Project Setup**
 
 ### **Step 1: Install Headless Chrome**
 Run:
+
 ```bash
 ./scripts/install_chrome_headless.sh
 ```
