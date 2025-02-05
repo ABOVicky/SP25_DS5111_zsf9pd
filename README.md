@@ -83,7 +83,7 @@ This will:
 
 Check that `ygainers.csv` exists:
 ```bash
-ls -lh ygainers.csv
+ls
 ```
 
 ## **4. Project Structure**
