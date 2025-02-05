@@ -28,7 +28,7 @@ sudo apt install tree
 ```
 
 ### **Automated Setup**
-Run the initialization script to conduct all manual steps:
+Run Initialization Script (All Manual Steps):
 
 ```bash
 ./scripts/init.sh
