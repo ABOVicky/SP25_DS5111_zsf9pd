@@ -66,18 +66,23 @@ ls -lh ygainers.csv
 ## **3. Project Structure**
 Run the following command:
 ```bash
-tree SP25_DS5111_zsf9pd -I env
+tree -I env
 ```
 Expected output:
 ```
-SP25_DS5111_zsf9pd/
-├── scripts/
-│   ├── install_chrome_headless.sh
-│   ├── init.sh
-│   ├── 00_01_setup_git_global_creds.sh
-├── Makefile
+.
+├── LICENSE
 ├── README.md
+├── google-chrome-stable_current_amd64.deb
+├── makefile
 ├── requirements.txt
+├── sample_data
+│   └── ygainers.csv
+├── scripts
+│   ├── 00_01_setup_git_global_creds.sh
+│   ├── init.sh
+│   └── install_chrome_headless.sh
+└── ygainers.html
 ```
 
 ## **4. Final Notes**
@@ -103,4 +108,4 @@ SP25_DS5111_zsf9pd/
 | Fetch stock gainers data | `make ygainers.csv` |
 | Check project structure | `tree -I env` |
 
-This guide ensures a smooth setup process for your project. 🚀 Let me know if you need any refinements!
+This guide ensures a smooth setup process for your project.
