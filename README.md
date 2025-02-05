@@ -7,7 +7,10 @@ This repository contains scripts and setup instructions to quickly configure an 
 1. Clone Repository:
 
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/ABOVicky/SP25_DS5111_zsf9pd.git
+   ```
+   
+   ```bash
    cd SP25_DS5111_zsf9pd
    ```
    
