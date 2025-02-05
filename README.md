@@ -5,27 +5,27 @@ This repository contains scripts and setup instructions to quickly configure an 
 ## **1. VM Bootstrap Setup**
 
 ### **Manual Steps (If Not Using Scripts)**
-1. Update System Packages:
+Update System Packages:
 
-   ```bash
-   # To bring VM snapshot up to date with package versions
-   sudo apt update
-   ```
+```bash
+# To bring VM snapshot up to date with package versions
+sudo apt update
+```
 
-   ```bash
-   # To use makefiles
-   sudo apt install make -y
-   ```
+```bash
+# To use makefiles
+sudo apt install make -y
+```
 
-   ```bash
-   # To create python virtual environments
-   sudo apt install python3.12-venv -y
-   ```
+```bash
+# To create python virtual environments
+sudo apt install python3.12-venv -y
+```
 
-   ```bash
-   # To list files in tree form
-   sudo apt install tree
-   ```
+```bash
+# To list files in tree form
+sudo apt install tree
+```
 
 ### **Automated Setup**
 Run the initialization script to conduct all manual steps:
