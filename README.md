@@ -73,11 +73,14 @@ ls -lh ygainers.csv
 ```
 
 ## **3. Project Structure**
-Run the following command:
+Run Following Command:
+
 ```bash
 tree -I env
 ```
-Expected output:
+
+Expected Output (Based on File Structure):
+
 ```
 .
 ├── LICENSE
