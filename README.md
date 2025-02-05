@@ -6,6 +6,7 @@ This repository contains scripts and setup instructions to quickly configure an 
 
 ### **Manual Steps (If Not Using Scripts)**
 1. Update system packages:
+
    ```bash
    sudo apt update
    ```
