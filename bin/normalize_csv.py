@@ -1,6 +1,12 @@
+"""
+CSV Normalization Script
+
+This script reads raw CSV files, standardizes column names, and outputs a normalized CSV.
+"""
+
+import os
 import sys
 import pandas as pd
-import os
 
 def normalize_csv(input_csv_path):
     """
@@ -8,7 +14,7 @@ def normalize_csv(input_csv_path):
     """
     assert isinstance(input_csv_path, str), f"Expected string, got {type(input_csv_path)}"
     assert os.path.exists(input_csv_path), f"File not found: {input_csv_path}"
-    
+
     # Read CSV
     df = pd.read_csv(input_csv_path)
 
@@ -20,9 +26,10 @@ def normalize_csv(input_csv_path):
         'Symbol': 'symbol', 'Ticker': 'symbol',
         'Price': 'price', 'Last Price': 'price',
         'Change': 'price_change', 'Price Change': 'price_change',
-        '% Change': 'price_percent_change', 'Percent Change': 'price_percent_change'
+        'Change %': 'price_percent_change', 'Percent Change': 'price_percent_change',
+        '% Change': 'price_percent_change'
     }
-    
+
     # Rename Columns (Based on Mapping)
     df.rename(columns=column_mapping, inplace=True)
 
