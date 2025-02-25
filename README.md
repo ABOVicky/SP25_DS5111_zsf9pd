@@ -1,3 +1,5 @@
+![Workflow Status](https://github.com/ABOVicky/SP25_DS5111_zsf9pd/actions/workflows/validations.yml/badge.svg)
+
 # **VM and Project Setup Guide - SP25_DS5111_zsf9pd**  
 
 This repository contains scripts and setup instructions to quickly configure an AWS EC2 instance for data collection using a headless Chrome browser and Python virtual environment.
