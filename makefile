@@ -20,7 +20,10 @@ wjsgainers.csv: wjsgainers.html
 	python -c "import pandas as pd; raw = pd.read_html('wjsgainers.html'); raw[0].to_csv('wjsgainers.csv', index=False)"
 
 lint:
-	bash -c "source env/bin/activate && pylint bin/normalize_csv.py"
+	bash -c "source env/bin/activate && pylint bin/gainers/factory.py bin/gainers/base.py bin/gainers/downloaders.py bin/gainers/processors.py bin/gainers/process_gainer.py get_gainer.py"
 
 test:
 	bash -c "source env/bin/activate && make lint && pytest -vv tests/"
+
+gainers:
+	python3 get_gainer.py $(SRC)
