@@ -1,6 +1,6 @@
 """
 get_gainer.py
-
+# test
 This script retrieves and processes stock gainers data
 using the Factory and Template Design Patterns.
 """
