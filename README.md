@@ -1,3 +1,5 @@
+# **Workflow Status**
+
 ![Workflow Status](https://github.com/ABOVicky/SP25_DS5111_zsf9pd/actions/workflows/validations.yml/badge.svg)
 
 # **VM and Project Setup Guide - SP25_DS5111_zsf9pd**  
