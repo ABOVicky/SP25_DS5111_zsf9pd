@@ -1,0 +1,9 @@
+# Yahoo Gainers - 3x/day from March 31 to April 4, 2025 (UTC)
+31 13 31,1-4 3,4 * python3 /home/ubuntu/SP25_DS5111_zsf9pd/collect_gainers.py yahoo
+30 16 31,1-4 3,4 * python3 /home/ubuntu/SP25_DS5111_zsf9pd/collect_gainers.py yahoo
+01 20 31,1-4 3,4 * python3 /home/ubuntu/SP25_DS5111_zsf9pd/collect_gainers.py yahoo
+
+# WSJ Gainers - 3x/day from March 31 to April 4, 2025 (UTC)
+31 13 31,1-4 3,4 * python3 /home/ubuntu/SP25_DS5111_zsf9pd/collect_gainers.py wsj
+30 16 31,1-4 3,4 * python3 /home/ubuntu/SP25_DS5111_zsf9pd/collect_gainers.py wsj
+01 20 31,1-4 3,4 * python3 /home/ubuntu/SP25_DS5111_zsf9pd/collect_gainers.py wsj
