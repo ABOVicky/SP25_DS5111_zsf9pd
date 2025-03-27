@@ -4,9 +4,9 @@ processors.py
 Contains concrete implementations of GainerProcess for Yahoo and WSJ.
 """
 
-from bin.gainers.base import GainerProcess
 import datetime
 import os
+from bin.gainers.base import GainerProcess
 
 class GainerProcessYahoo(GainerProcess):
     """Processes Yahoo gainers data"""
@@ -22,7 +22,7 @@ class GainerProcessYahoo(GainerProcess):
         print(f"Saving Yahoo gainers to {filename}")
 
         os.makedirs(os.path.dirname(filename), exist_ok=True)
-        with open(filename, "w") as f:
+        with open(filename, "w", encoding="utf-8") as f:
             f.write("symbol,price,price_change,price_percent_change\n")
             f.write("AAPL,150,2.3,+1.5%\n")
 
@@ -40,6 +40,6 @@ class GainerProcessWSJ(GainerProcess):
         print(f"Saving WSJ gainers to {filename}")
 
         os.makedirs(os.path.dirname(filename), exist_ok=True)
-        with open(filename, "w") as f:
+        with open(filename, "w", encoding="utf-8") as f:
             f.write("symbol,price,price_change,price_percent_change\n")
             f.write("MSFT,310,4.5,+1.7%\n")
