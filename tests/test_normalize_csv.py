@@ -12,7 +12,7 @@ import bin.normalize_csv as nc
 TEST_FILES = ["sample_data/sample.csv", "sample_data/ygainers.csv"]
 
 def test_normalize_csv():
-    """Test the CSV normalization function on multiple test files"""
+    """Test the CSV normalization function on multiple test files""" # can we give it a go to use the Given/When/Then paradigm for writing test comments?
 
     for test_csv_path in TEST_FILES:
         # Ensure the test file exists
