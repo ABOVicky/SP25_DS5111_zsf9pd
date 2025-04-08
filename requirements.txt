@@ -21,3 +21,4 @@ beautifulsoup4
 git+https://github.com/hydraseq/pryzm@master
 dbt-core
 dbt-snowflake
+# nice, good balance of versioning packages that are important to the repo, but not eeeeeverything.  Oh, dbt-core and dbt-snowflake should also be versioned, but I think you were going to do that at some point right?
