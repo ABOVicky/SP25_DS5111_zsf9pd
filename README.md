@@ -139,3 +139,11 @@ Expected Output (Based on File Structure):
 | Check project structure | `tree -I env` |
 
 This guide ensures a smooth setup process for your project.
+
+# General comment:
+Great work!  Your code looks neat and clean.  Seems like you're mostly caught up.  There a few places where we can add more like:
+* update the downloaders so they execute the code in the makefile
+* use some decorators in the tests
+* update python to latest in gith action
+
+I like your README too, it's just enough to get the point accross without turning into something so big people do a TLDR.
