@@ -10,7 +10,8 @@ class GainerDownloadYahoo(GainerDownload):
     """Downloads Yahoo gainers data"""
 
     def download(self):
-        """Simulates downloading Yahoo gainers"""
+        """Simulates downloading Yahoo gainers""" # as mentioned in class we can update this by simply copying the bash code from the makefile
+                                                  # and running it in os.system(<code from bash>).  That will make this functional for our purposes
         print("Downloading Yahoo gainers...")
 
     def __str__(self):
