@@ -11,9 +11,9 @@ def test_os_is_linux():
     assert platform.system() == "Linux", f"Tests must be run on Linux, found: {platform.system()}"
 
 def test_python_version():
-    """Ensure the Python version is 3.10 or 3.11"""
+    """Ensure the Python version is 3.12 or 3.13"""
     major, minor = sys.version_info[:2]
-    assert (major, minor) in [(3, 10), (3, 11), (3, 12)], f"Python version must be 3.10 -  3.12, found: {major}.{minor}"
+    assert (major, minor) in [(3, 12), (3, 13)], f"Python version must be 3.12 - 3.13, found: {major}.{minor}"
 
 def test_factory_yahoo():
     """Test that the Factory correctly returns a Yahoo Gainer downloader"""

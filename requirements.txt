@@ -19,5 +19,5 @@ tomlkit==0.13.2
 tzdata==2025.1
 beautifulsoup4
 git+https://github.com/hydraseq/pryzm@master
-dbt-core
-dbt-snowflake
+dbt-core==1.7.7
+dbt-snowflake==1.7.5
