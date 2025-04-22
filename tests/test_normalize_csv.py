@@ -1,4 +1,18 @@
+"""
+Unit tests for normalize_csv.py using pytest.
+"""
+
 import pytest
+import os
+import sys
+import pandas as pd
+
+# Make sure we can import the script to test
+sys.path.append(".")
+import bin.normalize_csv as nc
+
+#  Define test files BEFORE using them in @pytest.mark.parametrize
+TEST_FILES = ["sample_data/sample.csv", "sample_data/ygainers.csv"]
 
 @pytest.mark.parametrize("test_csv_path", TEST_FILES)
 def test_normalize_csv(test_csv_path):
@@ -23,3 +37,4 @@ def test_normalize_csv(test_csv_path):
 
     # Cleanup test artifacts
     os.remove(norm_csv_path)
+
