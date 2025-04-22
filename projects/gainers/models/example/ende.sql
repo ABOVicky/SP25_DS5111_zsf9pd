@@ -1,0 +1,2 @@
+SELECT en, de
+FROM DATA_SCIENCE.ZSF9PD_RAW.numbers
